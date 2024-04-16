@@ -18,6 +18,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.nehamadiwal.movieapp.MovieRow
+import com.nehamadiwal.movieapp.navigation.MovieScreens
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -53,8 +54,8 @@ fun MainContent(
         LazyColumn {
             items(items = movieList) {
                 MovieRow(movie = it) { movie ->
-                    Log.d("ItemClicked", "MainContent: $movie")
-
+                    //Log.d("ItemClicked", "MainContent: $movie")
+                    navController.navigate(route = MovieScreens.DetailsScreen.name)
                 }
             }
         }
