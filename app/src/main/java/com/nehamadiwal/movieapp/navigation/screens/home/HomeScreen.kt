@@ -1,6 +1,5 @@
 package com.nehamadiwal.movieapp.navigation.screens.home
 
-import android.util.Log
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
@@ -24,7 +23,7 @@ import com.nehamadiwal.movieapp.navigation.MovieScreens
 @Composable
 fun HomeScreen(navController: NavController) {
     Scaffold(topBar = {
-        TopAppBar(colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.Magenta),
+        TopAppBar(colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.LightGray),
             modifier = Modifier.shadow(elevation = 5.dp),
             title = { Text("Movies") }
         )
