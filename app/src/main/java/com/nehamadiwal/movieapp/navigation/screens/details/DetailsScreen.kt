@@ -35,7 +35,7 @@ fun DetailsScreen(navController: NavController, movieData: String?) {
                 modifier = Modifier.shadow(elevation = 5.dp),
                 title = {
                     Text(
-                        text = movieData.toString(),
+                        text = "Movie detail",
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis
                     )
